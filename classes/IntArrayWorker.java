@@ -113,5 +113,19 @@ public class IntArrayWorker
  return amount;
 
   }
+
+
+  public int getLargest(){
+    int largest=matrix[0][0];
+    for(int x=0;x<matrix.length;x++){
+      for (int y=0;y<matrix[0].length;y++)
+      {
+        if(largest <matrix[x][y]){
+          largest= matrix[x][y];
+        }
+      }
+    }
+    return largest;
+  }
  
 }
