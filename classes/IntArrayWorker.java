@@ -127,5 +127,11 @@ public class IntArrayWorker
     }
     return largest;
   }
- 
+ public int getColTotal(int columNum) {
+   int storage = 0;
+   for (int row = 0; row < matrix.length; row++) {
+     storage += matrix[row][columNum];
+   }
+   return storage;
+ }
 }
